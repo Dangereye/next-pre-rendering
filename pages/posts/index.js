@@ -8,7 +8,10 @@ const PostList = ({ posts }) => {
         <div key={post.id} className="post">
           <Link href={`/posts/${post.id}`} passHref>
             <a>
-              <h2>{post.title}</h2>
+              <h2>
+                {post.id}, {post.title}
+              </h2>
+              <hr />
             </a>
           </Link>
         </div>
@@ -22,5 +25,5 @@ export default PostList;
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await res.json();
-  return { props: { posts: data.slice(0, 5) } };
+  return { props: { posts: data } };
 };
