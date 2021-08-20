@@ -3,15 +3,14 @@ import Link from "next/link";
 const PostList = ({ posts }) => {
   return (
     <div className="container">
-      <h1>List of Posts</h1>
+      <h2>List of Posts</h2>
       {posts.map((post) => (
-        <div key={post.id} className="post">
+        <div key={post.id} className="card">
           <Link href={`/posts/${post.id}`} passHref>
             <a>
-              <h2>
+              <h3>
                 {post.id}, {post.title}
-              </h2>
-              <hr />
+              </h3>
             </a>
           </Link>
         </div>

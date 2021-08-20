@@ -3,10 +3,10 @@ const NewsArticleList = ({ articles }) => {
     <div className="container">
       <h2>List of News Articles</h2>
       {articles.map((article) => (
-        <div className="article" key={article.id}>
-          <h2>
+        <div className="card" key={article.id}>
+          <h3>
             {article.id}, {article.title} | {article.category}
-          </h2>
+          </h3>
         </div>
       ))}
     </div>

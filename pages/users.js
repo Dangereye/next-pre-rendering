@@ -3,9 +3,9 @@ import User from "../components/user";
 const UserList = ({ users }) => {
   return (
     <div className="container">
-      <h1>List of users</h1>
+      <h2>List of Users</h2>
       {users.map((user) => (
-        <div key={user.id} className="card">
+        <div key={user.id}>
           <User user={user} />
         </div>
       ))}
