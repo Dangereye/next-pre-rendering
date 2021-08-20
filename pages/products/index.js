@@ -1,12 +1,18 @@
+import Link from "next/link";
+
 const ProductList = ({ products }) => {
   return (
     <div className="container">
       <h2>List of Products</h2>
       {products.map((product) => (
         <div className="card" key={product.id}>
-          <h3>
-            {product.id}, {product.title} - {product.price}
-          </h3>
+          <Link href={`/products/${product.id}`} passHref>
+            <a>
+              <h3>
+                {product.id}, {product.title} - {product.price}
+              </h3>
+            </a>
+          </Link>
         </div>
       ))}
     </div>

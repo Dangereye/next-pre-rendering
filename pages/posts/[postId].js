@@ -1,6 +1,6 @@
 const Post = ({ post }) => {
   return (
-    <div className="card">
+    <div className="container">
       <h2>
         {post.id}, {post.title}
       </h2>

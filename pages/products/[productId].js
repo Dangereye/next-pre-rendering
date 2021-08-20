@@ -13,7 +13,6 @@ const Product = ({ product }) => {
         {product.id}, {product.title} - {product.price}
       </h2>
       <p>{product.description}</p>
-      <hr />
     </div>
   );
 };
