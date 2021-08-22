@@ -32,6 +32,11 @@ const Navbar = () => {
             <a>Dashboard</a>
           </Link>
         </li>
+        <li>
+          <Link href="/dashboard-swr">
+            <a>Dash(SWR)</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
