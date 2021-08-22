@@ -37,6 +37,11 @@ const Navbar = () => {
             <a>Dash(SWR)</a>
           </Link>
         </li>
+        <li>
+          <Link href="/events">
+            <a>Events</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
