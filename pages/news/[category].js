@@ -27,6 +27,8 @@ export const getServerSideProps = async (context) => {
   );
   const data = await response.json();
 
+  console.log(`Pre-rendering News Articles for ${category}`);
+
   return {
     props: { articles: data, category },
   };
